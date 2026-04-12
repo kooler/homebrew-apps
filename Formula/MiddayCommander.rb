@@ -5,21 +5,21 @@
 class Middaycommander < Formula
   desc "A modern dual-panel terminal file manager"
   homepage "https://github.com/kooler/MiddayCommander"
-  version "0.3"
+  version "0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kooler/MiddayCommander/releases/download/v0.3/MiddayCommander_0.3_darwin_amd64.tar.gz"
-      sha256 "4895040cc805d19ab64295138c4b91aa40e449ebfb865d723a552da085e1784b"
+      url "https://github.com/kooler/MiddayCommander/releases/download/v0.4/MiddayCommander_0.4_darwin_amd64.tar.gz"
+      sha256 "7943bf4d4f71cf0c256526b0ed97ea8539003dcd406114e8734754cfc05517bc"
 
       define_method(:install) do
         bin.install "mdc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kooler/MiddayCommander/releases/download/v0.3/MiddayCommander_0.3_darwin_arm64.tar.gz"
-      sha256 "53c503ec28925520718bf4018a8af790ab48fefdc9838b31f2b541178fee0a31"
+      url "https://github.com/kooler/MiddayCommander/releases/download/v0.4/MiddayCommander_0.4_darwin_arm64.tar.gz"
+      sha256 "7415482c750ea35e8645459bdfa22c7e8d8c6b9353b660c3b447ccf0a95903c5"
 
       define_method(:install) do
         bin.install "mdc"
@@ -29,15 +29,15 @@ class Middaycommander < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kooler/MiddayCommander/releases/download/v0.3/MiddayCommander_0.3_linux_amd64.tar.gz"
-      sha256 "894b5a4472b86df4cd298a094d076a7c723c4e6b5df4ffcbe0b9a01ca78131b8"
+      url "https://github.com/kooler/MiddayCommander/releases/download/v0.4/MiddayCommander_0.4_linux_amd64.tar.gz"
+      sha256 "6831a00dea30b62714d53e927ce2170a1d2ec5623159a953d5435a6ffa3018e4"
       define_method(:install) do
         bin.install "mdc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kooler/MiddayCommander/releases/download/v0.3/MiddayCommander_0.3_linux_arm64.tar.gz"
-      sha256 "9b9213eda024a4ec6d0d8eb57c3d9d77184c823cb902a1acf4c0b6de63e37f71"
+      url "https://github.com/kooler/MiddayCommander/releases/download/v0.4/MiddayCommander_0.4_linux_arm64.tar.gz"
+      sha256 "c3b8cc814ac7b42a5247d7ebd9b1921aad4aa1e8968afc9648dc9edb1f9a3aa1"
       define_method(:install) do
         bin.install "mdc"
       end
