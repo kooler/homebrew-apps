@@ -44,7 +44,7 @@ class Middaycommander < Formula
     end
   end
 
-  oldnames "MiddayCommander"
+  oldname "MiddayCommander"
 
   test do
     system "#{bin}/mdc", "--version"
