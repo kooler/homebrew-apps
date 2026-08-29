@@ -5,21 +5,21 @@
 class Cls < Formula
   desc "CLI for querying Console Log Server logs"
   homepage "https://github.com/kooler/ConsoleLogServer"
-  version "1.0.0"
+  version "1.0.1"
   license "O'Saasy License Agreement"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kooler/ConsoleLogServer/releases/download/v1.0.0/cls_1.0.0_darwin_amd64.tar.gz"
-      sha256 "9759411543f66352caf230b73759a64f427445657dc61114356e5162a17ead41"
+      url "https://github.com/kooler/ConsoleLogServer/releases/download/v1.0.1/cls_1.0.1_darwin_amd64.tar.gz"
+      sha256 "9e94023a974a72328c5b1ec737823248e9755f249f00e385236f00bd92d4a322"
 
       define_method(:install) do
         bin.install "cls"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kooler/ConsoleLogServer/releases/download/v1.0.0/cls_1.0.0_darwin_arm64.tar.gz"
-      sha256 "55bdd04383795043430b3546c56a720f0701faf1d998a90069896d9b091306fe"
+      url "https://github.com/kooler/ConsoleLogServer/releases/download/v1.0.1/cls_1.0.1_darwin_arm64.tar.gz"
+      sha256 "86c73b88d9e5054e4d26999fcb598ee26d416471a6b09d9e1d80f8a6c141dc66"
 
       define_method(:install) do
         bin.install "cls"
@@ -29,15 +29,15 @@ class Cls < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kooler/ConsoleLogServer/releases/download/v1.0.0/cls_1.0.0_linux_amd64.tar.gz"
-      sha256 "37329732107c787046fa0c943408cd7a932a645c2ea38127685d93106fc304e0"
+      url "https://github.com/kooler/ConsoleLogServer/releases/download/v1.0.1/cls_1.0.1_linux_amd64.tar.gz"
+      sha256 "634315896022ddf35ec3ab46af17ff08ecfe88e7b3cd7ab275d4a0a20c5434b3"
       define_method(:install) do
         bin.install "cls"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kooler/ConsoleLogServer/releases/download/v1.0.0/cls_1.0.0_linux_arm64.tar.gz"
-      sha256 "94161f51b48966789cfbd2460925fd60fdb78a4a90ee51297b2789cf5b6f8a25"
+      url "https://github.com/kooler/ConsoleLogServer/releases/download/v1.0.1/cls_1.0.1_linux_arm64.tar.gz"
+      sha256 "de316b3f85fce13645ce6361edc9e5d55429bf30fe4779395782c8be60d4e29e"
       define_method(:install) do
         bin.install "cls"
       end
